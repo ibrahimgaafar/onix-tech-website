@@ -1,0 +1,3870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/jpeg" href="/fav%20icon.jpg">
+  <title>OniX Tech | Wi-Fi Optimization, Network, CCTV & IT Support</title>
+
+  <meta
+    name="description"
+    content="OniX Tech provides Wi-Fi optimization, network installation, Cat6 and fiber cabling, CCTV, firewall, VPN and on-call IT support for homes and businesses in New Jersey."
+  />
+
+  <meta
+    name="keywords"
+    content="WiFi optimization New Jersey, network installation NJ, CCTV installation NJ, Cat6 cabling, fiber cabling, IT support, firewall VPN, OniX Tech"
+  />
+
+  <meta name="theme-color" content="#49b8ef" />
+
+  <meta property="og:title" content="OniX Tech | IT & Network Solutions" />
+  <meta
+    property="og:description"
+    content="Professional Wi-Fi optimization, networking, CCTV, cabling and IT support for homes and businesses."
+  />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "OniX Tech",
+    "description": "IT and network solutions including Wi-Fi optimization, network installation, CCTV, cabling, firewall, VPN and IT support.",
+    "telephone": "+1-732-588-9107",
+    "email": "info@onixtechno.com",
+    "areaServed": "New Jersey",
+    "serviceType": [
+      "Wi-Fi Optimization",
+      "Network Installation",
+      "CCTV Installation",
+      "Cat6 Cabling",
+      "Fiber Cabling",
+      "Firewall Setup",
+      "VPN Setup",
+      "IT Support"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --sky: #49b8ef;
+      --sky2: #1da1df;
+      --sky-light: #dff5ff;
+      --sky-extra: #effaff;
+
+      --blue: #068bc8;
+      --blue2: #006fb4;
+      --blue-dark: #064b78;
+      --navy: #062f50;
+      --deep: #04253e;
+
+      --orange: #f58a33;
+      --orange2: #ffab32;
+
+      --red: #ec2c31;
+      --red-dark: #a91f2d;
+
+      --white: #ffffff;
+      --text: #101820;
+      --muted: #58707f;
+
+      --border: rgba(6, 75, 120, 0.14);
+
+      --shadow:
+        0 18px 50px rgba(4, 72, 123, 0.13);
+
+      --shadow-soft:
+        0 10px 30px rgba(4, 72, 123, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+      background: white;
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+
+    /* =========================================================
+       GENERAL BRAND DECORATION
+    ========================================================= */
+
+    .brand-corner {
+      position: absolute;
+      width: 250px;
+      height: 160px;
+      pointer-events: none;
+      opacity: 0.95;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .brand-corner::before {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 14px;
+      background: var(--blue);
+      transform: rotate(-42deg);
+
+      box-shadow:
+        0 23px 0 var(--sky),
+        0 46px 0 var(--orange),
+        0 69px 0 var(--red);
+    }
+
+    .brand-corner.top-left {
+      left: -125px;
+      top: -85px;
+    }
+
+    .brand-corner.bottom-right {
+      right: -125px;
+      bottom: -85px;
+      transform: rotate(180deg);
+    }
+
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid var(--border);
+
+      box-shadow:
+        0 7px 28px rgba(5, 70, 115, 0.07);
+    }
+
+    header::before {
+      content: "";
+      height: 4px;
+      display: block;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--red) 0 24%,
+          var(--orange) 24% 48%,
+          var(--sky) 48% 74%,
+          var(--blue) 74% 100%
+        );
+    }
+
+    .nav {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+
+    /* LOGO */
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+
+      line-height: 0.82;
+
+      user-select: none;
+    }
+
+    .brand-main {
+      font-size: 31px;
+      font-weight: 950;
+      letter-spacing: -2px;
+    }
+
+    .brand-oni {
+      background:
+        linear-gradient(
+          180deg,
+          #f13b2d,
+          #981d2d
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .brand-x {
+      font-size: 43px;
+      margin-left: 2px;
+
+      background:
+        linear-gradient(
+          140deg,
+          #ffae2b 0 28%,
+          #ed2f32 29% 62%,
+          #087fc7 63% 100%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .brand-tech {
+      color: var(--blue);
+
+      padding-left: 14px;
+      margin-top: 7px;
+
+      font-size: 10px;
+      font-weight: 950;
+
+      letter-spacing: 9px;
+    }
+
+
+    /* NAV */
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      gap: 24px;
+
+      color: #374f5e;
+
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 28px 0;
+
+      transition: 0.25s ease;
+    }
+
+    .nav-links a::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: 18px;
+
+      width: 0;
+      height: 3px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--orange)
+        );
+
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue-dark);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+
+    /* NAV ACTIONS */
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .phone-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 10px 14px;
+
+      border:
+        1px solid rgba(6, 139, 200, 0.23);
+
+      border-radius: 12px;
+
+      color: var(--blue-dark);
+
+      font-size: 13px;
+      font-weight: 850;
+
+      transition: 0.25s;
+    }
+
+    .phone-button:hover {
+      background: var(--sky-extra);
+      transform: translateY(-2px);
+    }
+
+    .main-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      min-height: 48px;
+
+      padding: 11px 20px;
+
+      border: 0;
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          110deg,
+          var(--orange),
+          var(--red)
+        );
+
+      color: white;
+
+      font-weight: 850;
+
+      box-shadow:
+        0 11px 25px rgba(236, 44, 49, 0.2);
+
+      transition: 0.25s;
+    }
+
+    .main-button:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 16px 35px rgba(236, 44, 49, 0.28);
+    }
+
+
+    /* MOBILE BUTTON */
+
+    .menu-toggle {
+      display: none;
+
+      width: 44px;
+      height: 44px;
+
+      border: 1px solid var(--border);
+      border-radius: 12px;
+
+      background: white;
+
+      color: var(--blue-dark);
+
+      cursor: pointer;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+
+      min-height: 730px;
+
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(228, 247, 255, 0.98) 0%,
+          rgba(212, 242, 255, 0.94) 48%,
+          rgba(112, 196, 236, 0.79) 100%
+        ),
+        url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 650px;
+      height: 650px;
+
+      top: -250px;
+      right: -190px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255, 255, 255, 0.18);
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 440px;
+      height: 440px;
+
+      right: 7%;
+      bottom: -280px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(0, 130, 200, 0.16);
+
+      filter: blur(2px);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 5;
+
+      display: grid;
+
+      grid-template-columns:
+        1.05fr 0.95fr;
+
+      gap: 68px;
+
+      align-items: center;
+
+      padding: 95px 0;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 9px;
+
+      margin-bottom: 20px;
+
+      padding: 8px 14px;
+
+      border:
+        1px solid rgba(6, 139, 200, 0.18);
+
+      border-radius: 40px;
+
+      background:
+        rgba(255, 255, 255, 0.72);
+
+      color: var(--blue-dark);
+
+      font-size: 11px;
+      font-weight: 950;
+
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-badge-dot {
+      width: 9px;
+      height: 9px;
+
+      border-radius: 50%;
+
+      background: var(--orange);
+
+      box-shadow:
+        0 0 0 5px
+        rgba(245, 138, 51, 0.13);
+    }
+
+    .hero h1 {
+      max-width: 740px;
+
+      color: var(--navy);
+
+      font-size:
+        clamp(42px, 6vw, 70px);
+
+      line-height: 1.02;
+
+      letter-spacing: -3px;
+    }
+
+    .hero-highlight {
+      background:
+        linear-gradient(
+          100deg,
+          var(--blue) 0%,
+          #0875ba 57%,
+          var(--red) 100%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-description {
+      max-width: 660px;
+
+      margin-top: 23px;
+
+      color: #425c6b;
+
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      gap: 13px;
+
+      margin-top: 32px;
+    }
+
+    .outline-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 48px;
+
+      padding: 11px 20px;
+
+      border:
+        2px solid var(--blue-dark);
+
+      border-radius: 12px;
+
+      background:
+        rgba(255, 255, 255, 0.55);
+
+      color: var(--blue-dark);
+
+      font-weight: 850;
+
+      transition: 0.25s;
+    }
+
+    .outline-button:hover {
+      background: var(--blue-dark);
+      color: white;
+
+      transform: translateY(-3px);
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 9px;
+
+      min-height: 48px;
+
+      padding: 11px 20px;
+
+      border-radius: 12px;
+
+      background: #25d366;
+
+      color: white;
+
+      font-weight: 850;
+
+      box-shadow:
+        0 12px 26px rgba(37, 211, 102, 0.18);
+
+      transition: 0.25s;
+    }
+
+    .whatsapp-button:hover {
+      background: #20bd5a;
+
+      transform: translateY(-3px);
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 12px 22px;
+
+      margin-top: 31px;
+
+      color: var(--blue-dark);
+
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .hero-point {
+      display: flex;
+      align-items: center;
+
+      gap: 7px;
+    }
+
+    .mini-check {
+      width: 20px;
+      height: 20px;
+
+      display: inline-grid;
+      place-items: center;
+
+      border-radius: 50%;
+
+      background: var(--blue);
+
+      color: white;
+
+      font-size: 12px;
+      font-style: normal;
+    }
+
+
+    /* =========================================================
+       HERO WIFI CARD
+    ========================================================= */
+
+    .wifi-card {
+      position: relative;
+
+      padding: 32px;
+
+      overflow: hidden;
+
+      border:
+        1px solid
+        rgba(6, 139, 200, 0.22);
+
+      border-radius: 27px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.97),
+          rgba(226, 247, 255, 0.94)
+        );
+
+      box-shadow:
+        0 28px 75px rgba(4, 70, 115, 0.18);
+    }
+
+    .wifi-card::after {
+      content: "";
+
+      position: absolute;
+
+      width: 240px;
+      height: 240px;
+
+      right: -80px;
+      top: -100px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(29, 161, 223, 0.13);
+    }
+
+    .special-label {
+      position: relative;
+      z-index: 2;
+
+      display: block;
+
+      color: var(--red);
+
+      text-align: center;
+
+      font-size: 10px;
+      font-weight: 950;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2.3px;
+    }
+
+    .wifi-big-icon {
+      position: relative;
+      z-index: 2;
+
+      width: 112px;
+      height: 112px;
+
+      margin:
+        14px auto 19px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 50%;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--blue),
+          #56c6f4
+        );
+
+      animation:
+        wifiPulse 2.5s infinite;
+    }
+
+    @keyframes wifiPulse {
+      0%,
+      100% {
+        box-shadow:
+          0 16px 38px
+            rgba(0, 142, 204, 0.25),
+
+          0 0 0 0
+            rgba(0, 142, 204, 0.22);
+      }
+
+      50% {
+        box-shadow:
+          0 16px 38px
+            rgba(0, 142, 204, 0.25),
+
+          0 0 0 20px
+            rgba(0, 142, 204, 0);
+      }
+    }
+
+    .wifi-card h2 {
+      position: relative;
+      z-index: 2;
+
+      color: var(--navy);
+
+      text-align: center;
+
+      font-size: 29px;
+      line-height: 1.13;
+    }
+
+    .wifi-card > p {
+      position: relative;
+      z-index: 2;
+
+      color: var(--muted);
+
+      text-align: center;
+
+      margin:
+        13px auto 24px;
+    }
+
+    .wifi-benefits-grid {
+      position: relative;
+      z-index: 2;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 11px;
+    }
+
+    .wifi-benefit {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      padding: 14px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 14px;
+
+      background: white;
+
+      box-shadow:
+        0 6px 20px
+        rgba(4, 72, 123, 0.05);
+    }
+
+    .benefit-icon {
+      flex:
+        0 0 38px;
+
+      width: 38px;
+      height: 38px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 10px;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--blue),
+          var(--sky)
+        );
+
+      color: white;
+    }
+
+    .wifi-benefit strong {
+      display: block;
+
+      color: var(--navy);
+
+      font-size: 12px;
+    }
+
+    .wifi-benefit small {
+      color: var(--muted);
+
+      font-size: 10px;
+    }
+
+
+    /* =========================================================
+       TRUST BAR
+    ========================================================= */
+
+    .trust-section {
+      background: var(--blue-dark);
+
+      color: white;
+    }
+
+    .trust-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+    }
+
+    .trust-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 17px 12px;
+
+      border-right:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+
+      text-align: center;
+
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+
+    /* =========================================================
+       SHARED SECTION
+    ========================================================= */
+
+    .section {
+      position: relative;
+
+      padding: 92px 0;
+    }
+
+    .section-heading {
+      max-width: 750px;
+
+      margin:
+        0 auto 48px;
+
+      text-align: center;
+    }
+
+    .section-tag {
+      margin-bottom: 7px;
+
+      color: var(--red);
+
+      font-size: 11px;
+      font-weight: 950;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+
+      font-size:
+        clamp(32px, 4vw, 46px);
+
+      line-height: 1.1;
+
+      letter-spacing: -1.7px;
+    }
+
+    .section-heading p {
+      margin-top: 12px;
+
+      color: var(--muted);
+
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services {
+      background:
+        linear-gradient(
+          180deg,
+          white,
+          var(--sky-extra)
+        );
+    }
+
+    .service-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 19px;
+    }
+
+    .service-card {
+      position: relative;
+
+      min-height: 260px;
+
+      padding: 28px;
+
+      overflow: hidden;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 20px;
+
+      background: white;
+
+      box-shadow: var(--shadow-soft);
+
+      transition: 0.3s;
+    }
+
+    .service-card::before {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      top: 0;
+
+      width: 100%;
+      height: 4px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          var(--sky),
+          var(--orange)
+        );
+
+      transform:
+        scaleX(0);
+
+      transform-origin:
+        left;
+
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform:
+        translateY(-8px);
+
+      border-color:
+        rgba(29, 161, 223, 0.4);
+
+      box-shadow: var(--shadow);
+    }
+
+    .service-card:hover::before {
+      transform:
+        scaleX(1);
+    }
+
+    .service-card.featured {
+      border:
+        2px solid var(--sky);
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff,
+          #effaff
+        );
+    }
+
+    .featured-badge {
+      position: absolute;
+
+      right: 15px;
+      top: 15px;
+
+      padding:
+        5px 9px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          100deg,
+          var(--orange),
+          var(--red)
+        );
+
+      color: white;
+
+      font-size: 8px;
+      font-weight: 950;
+
+      letter-spacing: 1.2px;
+
+      text-transform: uppercase;
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 18px;
+
+      border-radius: 16px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--blue),
+          var(--sky)
+        );
+
+      box-shadow:
+        0 11px 24px
+        rgba(0, 142, 204, 0.16);
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+
+      margin-bottom: 9px;
+
+      font-size: 19px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+
+    /* =========================================================
+       WIFI SPECIALTY
+    ========================================================= */
+
+    .wifi-specialty {
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(208, 241, 255, 0.98),
+          rgba(235, 249, 255, 0.95)
+        );
+    }
+
+    .specialty-grid {
+      display: grid;
+
+      grid-template-columns:
+        0.93fr 1.07fr;
+
+      gap: 70px;
+
+      align-items: center;
+    }
+
+    .wifi-photo {
+      position: relative;
+
+      min-height: 440px;
+
+      overflow: hidden;
+
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          rgba(0, 105, 165, 0.08),
+          rgba(5, 64, 105, 0.18)
+        ),
+        url("https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=85")
+        center / cover;
+
+      box-shadow: var(--shadow);
+    }
+
+    .wifi-photo::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(9, 129, 191, 0.03),
+          rgba(2, 48, 82, 0.34)
+        );
+    }
+
+    .signal-bubble {
+      position: absolute;
+
+      z-index: 5;
+
+      left: 50%;
+      top: 50%;
+
+      transform:
+        translate(-50%, -50%);
+
+      width: 155px;
+      height: 155px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255, 255, 255, 0.88);
+
+      backdrop-filter: blur(14px);
+
+      color: var(--blue);
+
+      box-shadow:
+        0 22px 55px
+        rgba(2, 55, 91, 0.25);
+
+      animation:
+        floating 3.2s
+        ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0%,
+      100% {
+        transform:
+          translate(-50%, -50%);
+      }
+
+      50% {
+        transform:
+          translate(-50%, -56%);
+      }
+    }
+
+    .specialty-copy h2 {
+      max-width: 630px;
+
+      color: var(--navy);
+
+      font-size:
+        clamp(35px, 4vw, 51px);
+
+      line-height: 1.07;
+
+      letter-spacing: -2px;
+    }
+
+    .specialty-copy > p {
+      margin:
+        17px 0 25px;
+
+      color: var(--muted);
+
+      font-size: 16px;
+    }
+
+    .feature-list {
+      display: grid;
+
+      gap: 12px;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+
+      gap: 10px;
+
+      list-style: none;
+
+      color: #294655;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .feature-list .mini-check {
+      flex: 0 0 20px;
+
+      margin-top: 2px;
+    }
+
+
+    /* =========================================================
+       NETWORK BANNER
+    ========================================================= */
+
+    .network-banner {
+      position: relative;
+
+      min-height: 440px;
+
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 53, 88, 0.94),
+          rgba(3, 71, 116, 0.84),
+          rgba(5, 65, 105, 0.69)
+        ),
+        url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+    .network-banner::before {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background:
+        linear-gradient(
+          120deg,
+          transparent 0 50%,
+          rgba(54, 185, 239, 0.11) 100%
+        );
+    }
+
+    .network-banner-content {
+      position: relative;
+      z-index: 4;
+
+      max-width: 680px;
+
+      padding:
+        85px 0;
+    }
+
+    .network-banner h2 {
+      font-size:
+        clamp(34px, 4vw, 51px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2px;
+    }
+
+    .network-banner p {
+      margin:
+        17px 0 25px;
+
+      color: #d8edf6;
+
+      font-size: 16px;
+    }
+
+    .network-features {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-bottom: 27px;
+    }
+
+    .network-feature {
+      padding:
+        7px 12px;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.22);
+
+      border-radius: 30px;
+
+      background:
+        rgba(255, 255, 255, 0.08);
+
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+
+    /* =========================================================
+       WHY US
+    ========================================================= */
+
+    .why-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 23px;
+    }
+
+    .why-card {
+      padding: 35px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 24px;
+
+      background: white;
+
+      box-shadow: var(--shadow-soft);
+    }
+
+    .why-card h3 {
+      margin-bottom: 20px;
+
+      color: var(--navy);
+
+      font-size: 26px;
+    }
+
+    .why-list {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 15px;
+    }
+
+    .why-list span {
+      display: flex;
+      align-items: center;
+
+      gap: 8px;
+
+      color: #365462;
+
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+
+    /* =========================================================
+       PROCESS
+    ========================================================= */
+
+    .process-section {
+      background:
+        linear-gradient(
+          145deg,
+          #e4f7ff,
+          white
+        );
+    }
+
+    .process-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 14px;
+    }
+
+    .process-card {
+      padding:
+        27px 18px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 19px;
+
+      background: white;
+
+      text-align: center;
+
+      box-shadow: var(--shadow-soft);
+
+      transition: 0.28s;
+    }
+
+    .process-card:hover {
+      transform:
+        translateY(-6px);
+    }
+
+    .process-number {
+      width: 54px;
+      height: 54px;
+
+      display: grid;
+      place-items: center;
+
+      margin:
+        0 auto 14px;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--blue),
+          var(--sky)
+        );
+
+      color: white;
+
+      font-weight: 950;
+    }
+
+    .process-card:nth-child(3)
+    .process-number {
+      background:
+        linear-gradient(
+          145deg,
+          var(--orange),
+          var(--red)
+        );
+    }
+
+    .process-card:nth-child(4)
+    .process-number {
+      background:
+        linear-gradient(
+          145deg,
+          var(--red),
+          var(--blue-dark)
+        );
+    }
+
+    .process-card h4 {
+      margin-bottom: 6px;
+
+      color: var(--navy);
+
+      font-size: 17px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+
+    /* =========================================================
+       CONTACT + QR
+    ========================================================= */
+
+    .contact-section {
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #d7f2ff,
+          #74c8ee
+        );
+    }
+
+    .contact-card {
+      position: relative;
+      z-index: 5;
+
+      display: grid;
+
+      grid-template-columns:
+        1.03fr 0.97fr;
+
+      gap: 45px;
+
+      align-items: center;
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      padding: 48px;
+
+      border-radius: 28px;
+
+      background:
+        rgba(255, 255, 255, 0.94);
+
+      box-shadow:
+        0 27px 75px
+        rgba(4, 70, 112, 0.17);
+    }
+
+    .contact-card h2 {
+      color: var(--navy);
+
+      font-size:
+        clamp(32px, 4vw, 42px);
+
+      line-height: 1.07;
+
+      letter-spacing: -1.4px;
+    }
+
+    .contact-card p {
+      margin:
+        13px 0 24px;
+
+      color: var(--muted);
+    }
+
+    .contact-details {
+      display: grid;
+
+      gap: 11px;
+
+      margin-bottom: 26px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+
+      gap: 11px;
+
+      color: var(--blue-dark);
+
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .contact-icon {
+      flex: 0 0 39px;
+
+      width: 39px;
+      height: 39px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 11px;
+
+      background: var(--sky-light);
+
+      color: var(--blue);
+    }
+
+
+    /* QR */
+
+    .qr-area {
+      padding: 27px;
+
+      border:
+        1px solid
+        rgba(6, 139, 200, 0.18);
+
+      border-radius: 23px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #f3fcff,
+          #d9f5ff
+        );
+
+      text-align: center;
+    }
+
+    .qr-image-wrap {
+      max-width: 290px;
+
+      margin:
+        0 auto 17px;
+
+      padding: 9px;
+
+      border-radius: 18px;
+
+      background: white;
+
+      box-shadow:
+        0 15px 40px
+        rgba(4, 72, 123, 0.12);
+    }
+
+    .qr-image {
+      width: 100%;
+
+      border-radius: 11px;
+    }
+
+    .qr-area h3 {
+      color: var(--navy);
+
+      font-size: 21px;
+    }
+
+    .qr-area p {
+      margin:
+        7px 0 17px;
+
+      font-size: 12px;
+    }
+
+
+    /* =========================================================
+       FLOATING WHATSAPP
+    ========================================================= */
+
+    .floating-whatsapp {
+      position: fixed;
+
+      right: 22px;
+      bottom: 22px;
+
+      z-index: 1500;
+
+      width: 62px;
+      height: 62px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 50%;
+
+      background: #25d366;
+
+      color: white;
+
+      box-shadow:
+        0 15px 40px
+        rgba(20, 135, 65, 0.32);
+
+      transition: 0.25s;
+
+      animation:
+        whatsappPulse 2.7s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform:
+        scale(1.08);
+    }
+
+    @keyframes whatsappPulse {
+      0%,
+      100% {
+        box-shadow:
+          0 15px 40px
+          rgba(20, 135, 65, 0.32),
+
+          0 0 0 0
+          rgba(37, 211, 102, 0.22);
+      }
+
+      50% {
+        box-shadow:
+          0 15px 40px
+          rgba(20, 135, 65, 0.32),
+
+          0 0 0 16px
+          rgba(37, 211, 102, 0);
+      }
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      position: relative;
+
+      overflow: hidden;
+
+      background: var(--deep);
+
+      color: white;
+    }
+
+    .footer-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.3fr 0.8fr 1fr;
+
+      gap: 55px;
+
+      padding:
+        52px 0 38px;
+    }
+
+    footer .brand-tech {
+      color: var(--sky);
+    }
+
+    .footer-description {
+      max-width: 390px;
+
+      margin-top: 18px;
+
+      color: #b8d3df;
+
+      font-size: 13px;
+    }
+
+    .footer-title {
+      margin-bottom: 15px;
+
+      color: var(--sky);
+
+      font-size: 11px;
+      font-weight: 950;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.7px;
+    }
+
+    .footer-links {
+      display: grid;
+
+      gap: 9px;
+    }
+
+    .footer-links a,
+    .footer-contact a,
+    .footer-contact span {
+      color: #c5dbe5;
+
+      font-size: 13px;
+    }
+
+    .footer-links a:hover,
+    .footer-contact a:hover {
+      color: white;
+    }
+
+    .footer-contact {
+      display: grid;
+
+      gap: 9px;
+    }
+
+    .footer-bottom {
+      padding:
+        19px 0;
+
+      border-top:
+        1px solid
+        rgba(255, 255, 255, 0.11);
+
+      color: #8eb1c1;
+
+      text-align: center;
+
+      font-size: 11px;
+    }
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform:
+        translateY(24px);
+
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    .mobile-menu {
+      display: none;
+
+      padding:
+        12px 20px 18px;
+
+      border-top:
+        1px solid var(--border);
+
+      background: white;
+    }
+
+    .mobile-menu.open {
+      display: grid;
+    }
+
+    .mobile-menu a {
+      padding:
+        12px 5px;
+
+      border-bottom:
+        1px solid
+        rgba(6, 75, 120, 0.08);
+
+      color: var(--blue-dark);
+
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1040px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .hero-grid,
+      .specialty-grid,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 42px;
+      }
+
+      .wifi-card {
+        max-width: 650px;
+      }
+
+      .service-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .wifi-photo {
+        min-height: 370px;
+      }
+    }
+
+
+    @media (max-width: 760px) {
+      .container {
+        width:
+          min(100% - 28px, 1180px);
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .phone-button {
+        display: none;
+      }
+
+      .nav-actions .main-button {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding:
+          70px 0 58px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions a {
+        width: 100%;
+      }
+
+      .hero-points {
+        flex-direction: column;
+      }
+
+      .wifi-card {
+        padding:
+          25px 18px;
+      }
+
+      .wifi-benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .section {
+        padding:
+          70px 0;
+      }
+
+      .service-grid,
+      .process-grid,
+      .why-list {
+        grid-template-columns: 1fr;
+      }
+
+      .network-banner-content {
+        padding:
+          70px 0;
+      }
+
+      .contact-card {
+        padding:
+          28px 20px;
+      }
+
+      .qr-image-wrap {
+        max-width: 260px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+      }
+
+      .floating-whatsapp {
+        right: 17px;
+        bottom: 17px;
+
+        width: 57px;
+        height: 57px;
+      }
+    }
+
+
+    @media (max-width: 460px) {
+      .brand-main {
+        font-size: 25px;
+      }
+
+      .brand-x {
+        font-size: 35px;
+      }
+
+      .brand-tech {
+        font-size: 8px;
+        letter-spacing: 7px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .wifi-big-icon {
+        width: 95px;
+        height: 95px;
+      }
+
+      .contact-card h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<!-- ==========================================================
+     HEADER
+========================================================== -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="#home" class="brand" aria-label="OniX Tech Home">
+
+      <span class="brand-main">
+        <span class="brand-oni">Oni</span><span class="brand-x">X</span>
+      </span>
+
+      <span class="brand-tech">
+        TECH
+      </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#wifi">
+        Wi-Fi Optimization
+      </a>
+
+      <a href="#why">
+        Why Us
+      </a>
+
+      <a href="#process">
+        Process
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <a
+        class="phone-button"
+        href="tel:+17325889107"
+      >
+        ☎ (732) 588-9107
+      </a>
+
+      <a
+        class="main-button"
+        href="#contact"
+      >
+        Get Help
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <a href="#home">
+      Home
+    </a>
+
+    <a href="#services">
+      Services
+    </a>
+
+    <a href="#wifi">
+      Wi-Fi Optimization
+    </a>
+
+    <a href="#why">
+      Why Us
+    </a>
+
+    <a href="#process">
+      Process
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
+    <a href="tel:+17325889107">
+      Call (732) 588-9107
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- ==========================================================
+     HERO
+========================================================== -->
+
+<main>
+
+<section
+  class="hero"
+  id="home"
+>
+
+  <div class="brand-corner top-left"></div>
+  <div class="brand-corner bottom-right"></div>
+
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="hero-badge">
+
+        <span class="hero-badge-dot"></span>
+
+        IT & Network Solutions
+
+      </div>
+
+
+      <h1>
+
+        Better Wi-Fi.
+
+        <span class="hero-highlight">
+          Stronger Networks.
+        </span>
+
+        Smarter Support.
+
+      </h1>
+
+
+      <p class="hero-description">
+
+        Professional Wi-Fi optimization,
+        network installation, CCTV systems,
+        Cat6 & fiber cabling, firewall, VPN
+        and on-call IT support for homes
+        and businesses.
+
+      </p>
+
+
+      <div class="hero-actions">
+
+        <a
+          class="main-button"
+          href="tel:+17325889107"
+        >
+
+          ☎ Free Diagnosis
+
+        </a>
+
+
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/17325889107?text=Hi%20I%20need%20help%20with%20WiFi%2C%20internet%2C%20or%20network%20setup.%20My%20issue%20is%3A"
+          target="_blank"
+          rel="noopener"
+        >
+
+          WhatsApp Us
+
+        </a>
+
+
+        <a
+          class="outline-button"
+          href="#services"
+        >
+
+          Explore Services
+
+        </a>
+
+      </div>
+
+
+      <div class="hero-points">
+
+        <span class="hero-point">
+
+          <i class="mini-check">✓</i>
+
+          Homes & Businesses
+
+        </span>
+
+
+        <span class="hero-point">
+
+          <i class="mini-check">✓</i>
+
+          Professional Installation
+
+        </span>
+
+
+        <span class="hero-point">
+
+          <i class="mini-check">✓</i>
+
+          Fast Response
+
+        </span>
+
+
+        <span class="hero-point">
+
+          <i class="mini-check">✓</i>
+
+          New Jersey
+
+        </span>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- WIFI CARD -->
+
+    <div class="wifi-card reveal">
+
+      <span class="special-label">
+        OniX Specialty
+      </span>
+
+
+      <div class="wifi-big-icon">
+
+        <svg
+          width="66"
+          height="66"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+        >
+
+          <path d="M2 8.8C7.5 4.4 16.5 4.4 22 8.8"/>
+
+          <path d="M5 12c4-3.1 10-3.1 14 0"/>
+
+          <path d="M8.5 15.2c2-1.5 5-1.5 7 0"/>
+
+          <circle
+            cx="12"
+            cy="19"
+            r="1.2"
+            fill="currentColor"
+            stroke="none"
+          />
+
+        </svg>
+
+      </div>
+
+
+      <h2>
+        Wi-Fi Optimization Specialist
+      </h2>
+
+
+      <p>
+
+        Improve coverage, speed, stability
+        and wireless performance throughout
+        your home or business.
+
+      </p>
+
+
+      <div class="wifi-benefits-grid">
+
+        <div class="wifi-benefit">
+
+          <div class="benefit-icon">
+            ⚡
+          </div>
+
+          <div>
+
+            <strong>
+              Speed Optimization
+            </strong>
+
+            <small>
+              Improve real performance
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div class="wifi-benefit">
+
+          <div class="benefit-icon">
+            ◉
+          </div>
+
+          <div>
+
+            <strong>
+              Better Coverage
+            </strong>
+
+            <small>
+              Reduce weak zones
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div class="wifi-benefit">
+
+          <div class="benefit-icon">
+            ⌖
+          </div>
+
+          <div>
+
+            <strong>
+              AP Placement
+            </strong>
+
+            <small>
+              Better wireless design
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div class="wifi-benefit">
+
+          <div class="benefit-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>
+              Less Interference
+            </strong>
+
+            <small>
+              Cleaner Wi-Fi environment
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     TRUST
+========================================================== -->
+
+<div class="trust-section">
+
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      ✓ Residential & Business
+    </div>
+
+    <div class="trust-item">
+      ✓ Wi-Fi & Networking
+    </div>
+
+    <div class="trust-item">
+      ✓ CCTV & Cabling
+    </div>
+
+    <div class="trust-item">
+      ✓ Serving New Jersey
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ==========================================================
+     SERVICES
+========================================================== -->
+
+<section
+  class="section services"
+  id="services"
+>
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="section-tag">
+        Our Services
+      </div>
+
+      <h2>
+        Complete IT & Network Solutions
+      </h2>
+
+      <p>
+
+        Professional technology solutions
+        designed for reliable connectivity,
+        security and performance.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="service-grid">
+
+
+      <!-- NETWORK -->
+
+      <article class="service-card reveal">
+
+        <div class="service-icon">
+
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+
+            <circle
+              cx="12"
+              cy="12"
+              r="9"
+            />
+
+            <path
+              d="M3 12h18M12 3c3 3 4 6 4 9s-1 6-4 9c-3-3-4-6-4-9s1-6 4-9"
+            />
+
+          </svg>
+
+        </div>
+
+        <h3>
+          Network Installation
+        </h3>
+
+        <p>
+
+          Home and business network setup,
+          routers, switches, secure
+          configurations and troubleshooting.
+
+        </p>
+
+      </article>
+
+
+
+      <!-- WIFI -->
+
+      <article class="service-card featured reveal">
+
+        <span class="featured-badge">
+          Specialty
+        </span>
+
+        <div class="service-icon">
+
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+
+            <path
+              d="M2 8.7c5.7-4.7 14.3-4.7 20 0"
+            />
+
+            <path
+              d="M5.5 12.2c3.8-3 9.2-3 13 0"
+            />
+
+            <path
+              d="M9 15.5c1.8-1.4 4.2-1.4 6 0"
+            />
+
+            <circle
+              cx="12"
+              cy="19"
+              r="1"
+              fill="currentColor"
+            />
+
+          </svg>
+
+        </div>
+
+        <h3>
+          Wi-Fi Optimization
+        </h3>
+
+        <p>
+
+          Improve coverage, optimize router
+          and access point placement, reduce
+          dead zones and increase stability.
+
+        </p>
+
+      </article>
+
+
+
+      <!-- CCTV -->
+
+      <article class="service-card reveal">
+
+        <div class="service-icon">
+
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+
+            <path d="M4 6h13l3 4-10 4-6-3z"/>
+
+            <path d="M10 14v3"/>
+
+            <path d="M7 20h6"/>
+
+            <circle
+              cx="17.5"
+              cy="8.5"
+              r="1.5"
+            />
+
+          </svg>
+
+        </div>
+
+        <h3>
+          CCTV & Camera Systems
+        </h3>
+
+        <p>
+
+          IP camera installation, PoE,
+          NVR setup, recording configuration
+          and remote viewing.
+
+        </p>
+
+      </article>
+
+
+
+      <!-- CABLING -->
+
+      <article class="service-card reveal">
+
+        <div class="service-icon">
+
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+
+            <path
+              d="M7 3v6M11 3v6M5 9h8v4a4 4 0 0 1-4 4H8v4"
+            />
+
+            <path
+              d="M16 3h5v7h-5z"
+            />
+
+          </svg>
+
+        </div>
+
+        <h3>
+          Cat6 & Fiber Cabling
+        </h3>
+
+        <p>
+
+          Structured network cabling for
+          reliable, clean and professional
+          wired connections.
+
+        </p>
+
+      </article>
+
+
+
+      <!-- SECURITY -->
+
+      <article class="service-card reveal">
+
+        <div class="service-icon">
+
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+
+            <path
+              d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"
+            />
+
+            <path
+              d="M9 12l2 2 4-4"
+            />
+
+          </svg>
+
+        </div>
+
+        <h3>
+          Firewall & VPN
+        </h3>
+
+        <p>
+
+          Firewall configuration,
+          network protection and secure
+          VPN remote access.
+
+        </p>
+
+      </article>
+
+
+
+      <!-- IT SUPPORT -->
+
+      <article class="service-card reveal">
+
+        <div class="service-icon">
+
+          <svg
+            width="33"
+            height="33"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+
+            <rect
+              x="4"
+              y="4"
+              width="16"
+              height="11"
+              rx="2"
+            />
+
+            <path
+              d="M8 20h8M12 15v5"
+            />
+
+          </svg>
+
+        </div>
+
+        <h3>
+          On-Call IT Support
+        </h3>
+
+        <p>
+
+          Computer, printer, device,
+          internet and general technical
+          troubleshooting.
+
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     WIFI SPECIALTY
+========================================================== -->
+
+<section
+  class="section wifi-specialty"
+  id="wifi"
+>
+
+  <div class="container specialty-grid">
+
+
+    <div class="wifi-photo reveal">
+
+      <div class="signal-bubble">
+
+        <svg
+          width="94"
+          height="94"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        >
+
+          <path
+            d="M2 8.5c5.8-4.8 14.2-4.8 20 0"
+          />
+
+          <path
+            d="M5.2 12c4-3.2 9.6-3.2 13.6 0"
+          />
+
+          <path
+            d="M8.5 15.4c2.1-1.6 4.9-1.6 7 0"
+          />
+
+          <circle
+            cx="12"
+            cy="19"
+            r="1.2"
+            fill="currentColor"
+          />
+
+        </svg>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="specialty-copy reveal">
+
+      <div class="section-tag">
+        Our Specialty
+      </div>
+
+
+      <h2>
+
+        Wi-Fi Optimization
+        Focused on Real Performance
+
+      </h2>
+
+
+      <p>
+
+        Wi-Fi problems are not always caused
+        by your internet provider.
+
+        Router placement, interference,
+        building materials, channel congestion
+        and wireless design can dramatically
+        affect performance.
+
+        OniX Tech evaluates your environment
+        and optimizes the network for better
+        coverage, speed and reliability.
+
+      </p>
+
+
+      <ul class="feature-list">
+
+        <li>
+
+          <i class="mini-check">✓</i>
+
+          Improve wireless coverage throughout
+          your property
+
+        </li>
+
+
+        <li>
+
+          <i class="mini-check">✓</i>
+
+          Identify and reduce Wi-Fi dead zones
+
+        </li>
+
+
+        <li>
+
+          <i class="mini-check">✓</i>
+
+          Optimize router and access point
+          placement
+
+        </li>
+
+
+        <li>
+
+          <i class="mini-check">✓</i>
+
+          Reduce interference and channel
+          congestion
+
+        </li>
+
+
+        <li>
+
+          <i class="mini-check">✓</i>
+
+          Improve speed, stability and
+          device connectivity
+
+        </li>
+
+
+        <li>
+
+          <i class="mini-check">✓</i>
+
+          Optimize Wi-Fi for streaming,
+          work and smart devices
+
+        </li>
+
+      </ul>
+
+
+      <div class="hero-actions">
+
+        <a
+          class="main-button"
+          href="tel:+17325889107"
+        >
+
+          Request Wi-Fi Help
+
+        </a>
+
+
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/17325889107?text=Hi%20I%20need%20help%20optimizing%20my%20WiFi.%20My%20issue%20is%3A"
+          target="_blank"
+          rel="noopener"
+        >
+
+          WhatsApp
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     DATA CENTER / NETWORK SECTION
+========================================================== -->
+
+<section class="network-banner">
+
+  <div class="container">
+
+    <div class="network-banner-content reveal">
+
+      <div
+        class="section-tag"
+        style="color:#5fd0ff;"
+      >
+        Network Infrastructure
+      </div>
+
+
+      <h2>
+
+        Reliable Networks
+        Start With the Right Design
+
+      </h2>
+
+
+      <p>
+
+        From routers and switches to
+        structured Cat6 and fiber cabling,
+        OniX Tech builds and troubleshoots
+        network infrastructure designed
+        for dependable performance.
+
+      </p>
+
+
+      <div class="network-features">
+
+        <span class="network-feature">
+          Routers
+        </span>
+
+        <span class="network-feature">
+          Switches
+        </span>
+
+        <span class="network-feature">
+          Access Points
+        </span>
+
+        <span class="network-feature">
+          Cat6
+        </span>
+
+        <span class="network-feature">
+          Fiber
+        </span>
+
+        <span class="network-feature">
+          Firewall
+        </span>
+
+        <span class="network-feature">
+          VPN
+        </span>
+
+      </div>
+
+
+      <a
+        class="main-button"
+        href="tel:+17325889107"
+      >
+
+        Talk to a Technician
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     WHY US
+========================================================== -->
+
+<section
+  class="section"
+  id="why"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading reveal">
+
+      <div class="section-tag">
+        Why OniX Tech?
+      </div>
+
+
+      <h2>
+        Technical Service Made Simple
+      </h2>
+
+
+      <p>
+
+        We diagnose the problem,
+        explain your options clearly and
+        only proceed when you understand
+        and approve the solution.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card reveal">
+
+        <h3>
+          Why Customers Choose Us
+        </h3>
+
+
+        <div class="why-list">
+
+          <span>
+
+            <i class="mini-check">✓</i>
+
+            Professional Service
+
+          </span>
+
+
+          <span>
+
+            <i class="mini-check">✓</i>
+
+            Fast Response
+
+          </span>
+
+
+          <span>
+
+            <i class="mini-check">✓</i>
+
+            Free Diagnosis Visit
+
+          </span>
+
+
+          <span>
+
+            <i class="mini-check">✓</i>
+
+            Clear Solutions
+
+          </span>
+
+
+          <span>
+
+            <i class="mini-check">✓</i>
+
+            Clean Installations
+
+          </span>
+
+
+          <span>
+
+            <i class="mini-check">✓</i>
+
+            Home & Business
+
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="why-card reveal">
+
+        <h3>
+          Network-Focused Expertise
+        </h3>
+
+
+        <p
+          style="
+            color:var(--muted);
+            margin-bottom:20px;
+          "
+        >
+
+          From internet troubleshooting
+          and Wi-Fi performance to
+          structured cabling, CCTV systems,
+          firewall configuration and
+          secure remote access,
+          OniX Tech focuses on practical
+          solutions that improve how
+          your technology works.
+
+        </p>
+
+
+        <a
+          class="outline-button"
+          href="#contact"
+        >
+
+          Get Technical Help
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     PROCESS
+========================================================== -->
+
+<section
+  class="section process-section"
+  id="process"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading reveal">
+
+      <div class="section-tag">
+        Our Process
+      </div>
+
+      <h2>
+        Simple. Clear. Professional.
+      </h2>
+
+    </div>
+
+
+
+    <div class="process-grid">
+
+
+      <div class="process-card reveal">
+
+        <div class="process-number">
+          01
+        </div>
+
+        <h4>
+          Consult
+        </h4>
+
+        <p>
+
+          We listen and understand
+          your issue and needs.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card reveal">
+
+        <div class="process-number">
+          02
+        </div>
+
+        <h4>
+          Diagnose & Plan
+        </h4>
+
+        <p>
+
+          We identify the issue and
+          recommend the right solution.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card reveal">
+
+        <div class="process-number">
+          03
+        </div>
+
+        <h4>
+          Install
+        </h4>
+
+        <p>
+
+          We install, configure and
+          optimize your technology.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card reveal">
+
+        <div class="process-number">
+          04
+        </div>
+
+        <h4>
+          Support
+        </h4>
+
+        <p>
+
+          We help keep your setup
+          reliable after installation.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     CONTACT / WHATSAPP QR
+========================================================== -->
+
+<section
+  class="section contact-section"
+  id="contact"
+>
+
+  <div class="brand-corner bottom-right"></div>
+
+
+  <div class="container">
+
+    <div class="contact-card reveal">
+
+
+      <div>
+
+        <div class="section-tag">
+          Contact OniX Tech
+        </div>
+
+
+        <h2>
+
+          Need Help With
+          Wi-Fi, Internet or Networking?
+
+        </h2>
+
+
+        <p>
+
+          Contact OniX Tech to discuss
+          Wi-Fi optimization, internet,
+          networking, CCTV, cabling or
+          IT support.
+
+        </p>
+
+
+
+        <div class="contact-details">
+
+
+          <a
+            class="contact-row"
+            href="tel:+17325889107"
+          >
+
+            <span class="contact-icon">
+              ☎
+            </span>
+
+            (732) 588-9107
+
+          </a>
+
+
+
+          <a
+            class="contact-row"
+            href="mailto:info@onixtechno.com"
+          >
+
+            <span class="contact-icon">
+              ✉
+            </span>
+
+            info@onixtechno.com
+
+          </a>
+
+
+
+          <div class="contact-row">
+
+            <span class="contact-icon">
+              ⌖
+            </span>
+
+            Serving homes & businesses
+            in New Jersey
+
+          </div>
+
+        </div>
+
+
+
+        <div class="hero-actions">
+
+          <a
+            class="main-button"
+            href="tel:+17325889107"
+          >
+
+            Call OniX Tech
+
+          </a>
+
+
+          <a
+            class="whatsapp-button"
+            href="https://wa.me/17325889107?text=Hi%20I%20need%20help%20with%20WiFi%2C%20internet%2C%20or%20network%20setup.%20My%20issue%20is%3A"
+            target="_blank"
+            rel="noopener"
+          >
+
+            WhatsApp
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- REAL QR IMAGE -->
+
+      <div class="qr-area">
+
+
+        <a
+          href="https://wa.me/17325889107?text=Hi%20I%20need%20help%20with%20WiFi%2C%20internet%2C%20or%20network%20setup.%20My%20issue%20is%3A"
+          target="_blank"
+          rel="noopener"
+          class="qr-image-wrap"
+        >
+
+          <img
+            src="QR%20Code%20WhatsApp%20Business.jpg"
+            alt="OniX Tech WhatsApp Business QR Code"
+            class="qr-image"
+          />
+
+        </a>
+
+
+        <h3>
+          Scan for Help
+        </h3>
+
+
+        <p>
+
+          Scan the QR code or click it
+          to message OniX Tech directly
+          on WhatsApp Business.
+
+        </p>
+
+
+        <a
+          class="whatsapp-button"
+          style="width:100%;"
+          href="https://wa.me/17325889107?text=Hi%20I%20need%20help%20with%20WiFi%2C%20internet%2C%20or%20network%20setup.%20My%20issue%20is%3A"
+          target="_blank"
+          rel="noopener"
+        >
+
+          Open WhatsApp Chat
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer>
+
+  <div class="brand-corner bottom-right"></div>
+
+
+  <div class="container footer-grid">
+
+
+    <div>
+
+      <a
+        class="brand"
+        href="#home"
+      >
+
+        <span class="brand-main">
+
+          <span class="brand-oni">
+            Oni
+          </span>
+
+          <span class="brand-x">
+            X
+          </span>
+
+        </span>
+
+
+        <span class="brand-tech">
+          TECH
+        </span>
+
+      </a>
+
+
+      <p class="footer-description">
+
+        IT & Network Solutions for
+        homes and businesses.
+
+        Wi-Fi optimization, networking,
+        CCTV, structured cabling,
+        security and technical support.
+
+      </p>
+
+    </div>
+
+
+
+    <div>
+
+      <div class="footer-title">
+        Quick Links
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#wifi">
+          Wi-Fi Optimization
+        </a>
+
+        <a href="#why">
+          Why Us
+        </a>
+
+        <a href="#process">
+          Our Process
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <div>
+
+      <div class="footer-title">
+        Contact
+      </div>
+
+
+      <div class="footer-contact">
+
+        <a href="tel:+17325889107">
+
+          ☎ (732) 588-9107
+
+        </a>
+
+
+        <a href="mailto:info@onixtechno.com">
+
+          ✉ info@onixtechno.com
+
+        </a>
+
+
+        <span>
+
+          Serving homes & businesses
+          in New Jersey
+
+        </span>
+
+
+        <a
+          href="https://wa.me/17325889107"
+          target="_blank"
+          rel="noopener"
+        >
+
+          WhatsApp Business
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    © 2026 OniX Tech. All rights reserved. • Developed by Ibrahim Gaafar
+
+  </div>
+
+</footer>
+
+
+
+<!-- ==========================================================
+     FLOATING WHATSAPP BUTTON
+========================================================== -->
+
+<a
+  class="floating-whatsapp"
+  href="https://wa.me/17325889107?text=Hi%20I%20need%20help%20with%20WiFi%2C%20internet%2C%20or%20network%20setup.%20My%20issue%20is%3A"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with OniX Tech on WhatsApp"
+>
+
+  <svg
+    width="35"
+    height="35"
+    viewBox="0 0 32 32"
+    fill="currentColor"
+  >
+
+    <path
+      d="M16 3C9 3 3.4 8.4 3.4 15.1c0 2.4.7 4.7 2 6.6L3 29l7.6-2.3c1.7.9 3.6 1.4 5.5 1.4 7 0 12.6-5.4 12.6-12.1C28.7 8.4 23 3 16 3zm0 22.8c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-4.5 1.4 1.4-4.2-.3-.4c-.9-1.6-1.5-3.7-1.5-5.7C5.9 9.9 10.4 5.4 16 5.4s10.2 4.4 10.2 9.8S21.6 25.8 16 25.8zm5.6-7.5c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.7-4.2-3.7-.3-.5.3-.5.9-1.7.1-.2.1-.4 0-.6-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.2 2.2.9 3.1 1 4.2.9.7-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.2-.1-.5-.2-.8-.3z"
+    />
+
+  </svg>
+
+</a>
+
+
+
+<!-- ==========================================================
+     JAVASCRIPT
+========================================================== -->
+
+<script>
+
+  /* MOBILE MENU */
+
+  const menuToggle =
+    document.getElementById("menuToggle");
+
+  const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+  menuToggle.addEventListener(
+    "click",
+    function () {
+
+      mobileMenu.classList.toggle("open");
+
+      menuToggle.textContent =
+        mobileMenu.classList.contains("open")
+        ? "✕"
+        : "☰";
+
+    }
+  );
+
+
+  document
+    .querySelectorAll(
+      ".mobile-menu a"
+    )
+    .forEach(
+      function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            mobileMenu
+              .classList
+              .remove("open");
+
+            menuToggle.textContent =
+              "☰";
+
+          }
+        );
+
+      }
+    );
+
+
+
+  /* SCROLL REVEAL */
+
+  const observer =
+    new IntersectionObserver(
+      function (entries) {
+
+        entries.forEach(
+          function (entry) {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              entry.target
+                .classList
+                .add("visible");
+
+            }
+
+          }
+        );
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+  document
+    .querySelectorAll(".reveal")
+    .forEach(
+      function (element) {
+
+        observer.observe(element);
+
+      }
+    );
+
+</script>
+
+
+</body>
+</html>
